@@ -175,7 +175,7 @@ body{
 }
 
 .device-card{
-    height: 60px;
+    height: 90px;
 
     background: #2b2b2b;
 
@@ -419,9 +419,11 @@ body{
 }
 
 .path-btn{
-    height: 34px;
+    height: 30px;
 
-    padding: 0 12px;
+    padding: 0 10px;
+
+    font-size: 12px;
 
     border: none;
 
@@ -442,6 +444,36 @@ body{
     background: #252525;
 
     border-radius: 16px;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    gap: 15px;
+
+    align-content: start;
+}
+
+.file-card{
+    height: 140px;
+
+    background: #333;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
 }
 
 
@@ -523,4 +555,39 @@ body{
     color: white;
 
     cursor: pointer;
+}
+
+
+.sidebar-toggle{
+
+    width: 4px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+
+.collapsed{
+
+    width: 0;
+
+    overflow: hidden;
+}
+
+.sidebar{
+    transition: width 0.25s ease;
+}
+
+.sidebar-toggle{
+    transition: all 0.25s ease;
 }

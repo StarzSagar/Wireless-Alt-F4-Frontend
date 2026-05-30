@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +8,14 @@
 </head>
 
 
+
+
+
 <body>
+
+
+
+
 
     <div class="topbar">
 
@@ -51,16 +55,41 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
-    <div class="main-container">        
+    <div class="main-container">
+        
+        
+
+
+
+
+
+
         <div class="sidebar">
 
 
 
-
             <div class="sidebar-content">
+
+
+
 
                 <div class="device-list">
                     <div class="panel-header">
@@ -70,25 +99,78 @@
                         <input type="text" placeholder="Search devices...">
                     </div>
                     <div class="devices-container">
+
+
+
+
+
+
+
                         <div class="device-card active-device">
-                            OFFICE-PC-01
+                            <div class="device-name">
+                                OFFICE-PC-01
+                            </div>
+
+                            <div class="device-status">
+                                Online
+                            </div>
+
+                            <div class="device-ip">
+                                192.168.1.5
+                            </div>
                         </div>
+
                         <div class="device-card">
-                            DESIGN-LAPTOP
+                            <div class="device-name">
+                                DESIGN-LAPTOP
+                            </div>
+                            <div class="device-status">
+                                Offline
+                            </div>
+                            <div class="device-ip">
+                                192.168.1.10
+                            </div>
                         </div>
+
                         <div class="device-card">
-                            SERVER-01
+                            <div class="device-name">
+                                SERVER-01
+                            </div>
+                            <div class="device-status">
+                                Online
+                            </div>
+                            <div class="device-ip">
+                                192.168.1.20
+                            </div>
                         </div>
+
                         <div class="device-card">
-                            ANDROID-PHONE
+                            <div class="device-name">
+                                ANDROID-PHONE
+                            </div>
+                            <div class="device-status">
+                                Online
+                            </div>
+                            <div class="device-ip">
+                                192.168.1.30
+                            </div>
                         </div>
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
 
                 <div class="add-device-btn">
                     Add Device
                 </div>
-
 
 
 
@@ -140,6 +222,8 @@
                 
                 
                 <div class="overview-panel">
+
+
                     <div class="panel-header">
                         Device Overview
                     </div>
@@ -147,18 +231,29 @@
 
 
                     <div class="overview-content">
+
+
                         <div class="overview-item">
                             Device Name:
+                            <span id="overview-device-name"></span>
                         </div>
+
                         <div class="overview-item">
                             IP Address:
+                            <span id="overview-device-ip"></span>
                         </div>
+
                         <div class="overview-item">
                             Status:
+                            <span id="overview-device-status"></span>
                         </div>
+
                         <div class="overview-item">
                             Uptime:
+                            <span id="overview-device-uptime"></span>
                         </div>
+
+
                     </div>
 
 
@@ -174,8 +269,19 @@
 
 
 
-            </div>  
+            </div>
             
+            
+            
+        </div>
+
+
+
+
+        
+
+        <div class="sidebar-toggle">
+            ◀
         </div>
 
 
@@ -336,15 +442,52 @@
 
 
 
+                
+
+
                 <div class="file-area">
-                    Files and folders
+
+                    <div class="file-card">
+                        📁 Desktop
+                    </div>
+
+                    <div class="file-card">
+                        📁 Documents
+                    </div>
+
+                    <div class="file-card">
+                        📁 Downloads
+                    </div>
+
+                    <div class="file-card">
+                        📁 Pictures
+                    </div>
+
+                    <div class="file-card">
+                        📄 notes.txt
+                    </div>
+
+                    <div class="file-card">
+                        📄 report.pdf
+                    </div>
+
+                    <div class="file-card">
+                        📄 config.json
+                    </div>
+
+                    <div class="file-card">
+                        📄 data.xlsx
+                    </div>
+
                 </div>
 
-                
-                     
-            
-                        
-            
+
+
+
+
+
+                    
+                            
                                 
             </div>
                     
