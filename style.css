@@ -245,14 +245,7 @@ body{
     padding: 12px;
 }
 
-.workspace-content{
-    width: 100%;
-    height: 100%;
 
-    background: #1e1e1e;
-
-    border-radius: 18px;
-}
 
 
 .workspace-content{
@@ -266,10 +259,15 @@ body{
     display: flex;
     flex-direction: column;
 
-    gap: 12px;
+    gap: 20px;
 
     padding: 12px;
 }
+
+
+
+
+
 
 .workspace-header{
     height: 90px;
@@ -386,6 +384,8 @@ body{
     padding: 0 15px;
 
     gap: 15px;
+
+    margin-bottom: 10px;
 }
 
 .path-left{
@@ -454,6 +454,8 @@ body{
     gap: 15px;
 
     align-content: start;
+
+    padding: 20px;
 }
 
 .file-card{
@@ -491,6 +493,8 @@ body{
     justify-content: space-between;
 
     padding: 0 20px;
+
+    margin-bottom: 10px;
 }
 
 .device-info-left{
@@ -590,4 +594,183 @@ body{
 
 .sidebar-toggle{
     transition: all 0.25s ease;
+}
+
+#screencast-page,
+#shell-page,
+#audio-page,
+#config-page{
+    display: none;
+}
+
+.workspace-page{
+
+    width: 100%;
+
+    height: 100%;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.shell-container{
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #252525;
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.screencast-container{
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #252525;
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.audio-container{
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #252525;
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.config-container{
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #252525;
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.active-tab{
+
+    background: #3a3a3a;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+.shell-page{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.shell-toolbar{
+
+    height:60px;
+
+    background:#252525;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:0 15px;
+}
+
+.shell-run-btn{
+
+    height: 100%;
+
+    width: 90px;
+
+    padding:0 15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#333;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.shell-output{
+
+    flex:1;
+
+    background:#1a1a1a;
+
+    border-radius:16px;
+
+    padding:15px;
+
+    color:#00ff88;
+
+    overflow:auto;
+
+    margin-top:10px;
+
+    height: 75%;
+
+}
+
+.shell-input-bar{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+
+    height: 55px;
+
+    align-items: center;
+
+}
+
+
+.shell-input{
+
+    flex:1;
+
+    height: 100%;
+
+    background:#1e1e1e;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:0 15px;
+
+    color:white;
+
+    outline:none;
+
+    
 }

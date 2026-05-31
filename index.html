@@ -25,23 +25,23 @@
 
         <div class="top-center">
 
-            <div class="tool-tab active-tab">
+            <div class="tool-tab active-tab" id="explorer-tab">
                 Explorer
             </div>
 
-            <div class="tool-tab">
+            <div class="tool-tab" id="screencast-tab">
                 Screencast
             </div>
 
-            <div class="tool-tab">
+            <div class="tool-tab" id="shell-tab">
                 Shell
             </div>
 
-            <div class="tool-tab">
+            <div class="tool-tab" id="audio-tab">
                 Audio
             </div>
 
-            <div class="tool-tab">
+            <div class="tool-tab" id="config-tab">
                 Config
             </div>
 
@@ -76,10 +76,6 @@
     <div class="main-container">
         
         
-
-
-
-
 
 
         <div class="sidebar">
@@ -276,13 +272,14 @@
         </div>
 
 
-
-
-        
-
         <div class="sidebar-toggle">
             ◀
         </div>
+
+
+
+
+
 
 
 
@@ -297,125 +294,199 @@
 
 
 
-
-
-
-
-
-
+                <div id="explorer-page">
 
 
                 
+                    <div class="device-info-bar">
 
-                <div class="device-info-bar">
 
+                        <div class="device-info-left">
 
-                    <div class="device-info-left">
-
-                        <div class="device-icon">
-                            PC
-                        </div>
-
-                        <div class="device-details">
-
-                            <div class="device-name">
-                                OFFICE-PC-01
+                            <div class="device-icon">
+                                PC
                             </div>
 
-                            <div class="device-meta">
-                                192.168.1.5 • Windows 11 Pro • Online
+                            <div class="device-details">
+
+                                <div class="device-name">
+                                    OFFICE-PC-01
+                                </div>
+
+                                <div class="device-meta">
+                                    192.168.1.5 • Windows 11 Pro • Online
+                                </div>
+
                             </div>
 
                         </div>
 
-                    </div>
 
 
+                        <div class="device-info-right">
+                            <button class="info-btn">
+                                Refresh
+                            </button>
 
-                    <div class="device-info-right">
-                        <button class="info-btn">
-                            Refresh
-                        </button>
-
-                        <button class="info-btn">
-                            Info
-                        </button>
-                    </div>
+                            <button class="info-btn">
+                                Info
+                            </button>
+                        </div>
 
                                                     
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    </div>
+                
                                 
-                
-                
-                
-                <div class="path-bar">
+                    <div class="path-bar">
 
-                    <div class="path-left">
+                        <div class="path-left">
 
-                        <button class="path-btn">
-                            Back
-                        </button>
+                            <button class="path-btn">
+                                Back
+                            </button>
 
-                        <button class="path-btn">
-                            Forward
-                        </button>
+                            <button class="path-btn">
+                                Forward
+                            </button>
 
-                        <button class="path-btn">
-                            Up
-                        </button>
+                            <button class="path-btn">
+                                Up
+                            </button>
 
-                        <button class="path-btn">
-                            Refresh
-                        </button>
+                            <button class="path-btn">
+                                Refresh
+                            </button>
 
 
 
-                        <div class="current-path">
+                            <div class="current-path">
 
-                            This PC > Local Disk (C:) > Users > Admin
+                                This PC > Local Disk (C:) > Users > Admin
 
-                        </div>                   
+                            </div>                   
                     
+                        </div>
+
+
+                        <div class="path-right">
+
+                            <button class="path-btn">
+                                Upload
+                            </button>
+
+                            <button class="path-btn">
+                                Download
+                            </button>
+
+                            <button class="path-btn">
+                                List
+                            </button>
+
+                            <button class="path-btn">
+                                Grid
+                            </button>
+
+                            <button class="path-btn">
+                                New Folder
+                            </button>
+
+                        </div>
+
                     </div>
 
 
-                    <div class="path-right">
+                    <div class="file-area">
 
-                        <button class="path-btn">
-                            Upload
+                        <div class="file-card">
+                            📁 Desktop
+                        </div>
+
+                        <div class="file-card">
+                            📁 Documents
+                        </div>
+
+                        <div class="file-card">
+                            📁 Downloads
+                        </div>
+
+                        <div class="file-card">
+                            📁 Pictures
+                        </div>
+
+                        <div class="file-card">
+                            📄 notes.txt
+                        </div>
+
+                        <div class="file-card">
+                            📄 report.pdf
+                        </div>
+
+                        <div class="file-card">
+                            📄 config.json
+                        </div>
+
+                        <div class="file-card">
+                            📄 data.xlsx
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div id="screencast-page" class="workspace-page">
+
+                    <div class="screencast-container">
+
+                        Screencast Area
+
+                    </div>
+
+                </div>
+
+
+
+                <div id="shell-page" class="workspace-page">
+
+                    <div class="shell-toolbar">
+
+                        <button class="shell-btn">
+                            Connect
                         </button>
 
-                        <button class="path-btn">
-                            Download
+                        <button class="shell-btn">
+                            Clear
                         </button>
 
-                        <button class="path-btn">
-                            List
+                        <button class="shell-btn">
+                            Save
                         </button>
 
-                        <button class="path-btn">
-                            Grid
-                        </button>
+                    </div>
 
-                        <button class="path-btn">
-                            New Folder
+                    <div class="shell-output">
+
+                        <div class="terminal-text">
+
+                            C:\Users\Admin> Welcome
+
+                        </div>
+
+                    </div>
+
+                    <div class="shell-input-bar">
+
+                        <input
+                            type="text"
+                            class="shell-input"
+                            placeholder="Enter command..."
+                        >
+
+                        <button class="shell-run-btn">
+                            Run
                         </button>
 
                     </div>
@@ -424,69 +495,29 @@
 
 
 
+                <div id="audio-page" class="workspace-page">
 
+                    <div class="audio-container">
 
+                        Audio Workspace
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-
-                <div class="file-area">
-
-                    <div class="file-card">
-                        📁 Desktop
-                    </div>
-
-                    <div class="file-card">
-                        📁 Documents
-                    </div>
-
-                    <div class="file-card">
-                        📁 Downloads
-                    </div>
-
-                    <div class="file-card">
-                        📁 Pictures
-                    </div>
-
-                    <div class="file-card">
-                        📄 notes.txt
-                    </div>
-
-                    <div class="file-card">
-                        📄 report.pdf
-                    </div>
-
-                    <div class="file-card">
-                        📄 config.json
-                    </div>
-
-                    <div class="file-card">
-                        📄 data.xlsx
                     </div>
 
                 </div>
 
 
 
+                <div id="config-page" class="workspace-page">
+
+                    <div class="config-container">
+
+                        Config Workspace
+
+                    </div>
+
+                </div>
 
 
-
-                    
                             
                                 
             </div>
