@@ -94,20 +94,30 @@
                     <div class="device-search">
                         <input type="text" placeholder="Search devices...">
                     </div>
+
+
+
+
+
+
+
+
+
+
                     <div class="devices-container">
 
 
-
-
-
-
-
-                        <div class="device-card active-device">
+                        <div
+                            class="device-card"
+                            data-name="OFFICE-PC-01"
+                            data-ip="192.168.1.5"
+                            data-status="Online"
+                        >
                             <div class="device-name">
                                 OFFICE-PC-01
                             </div>
 
-                            <div class="device-status">
+                            <div class="device-status online-status">
                                 Online
                             </div>
 
@@ -116,11 +126,16 @@
                             </div>
                         </div>
 
-                        <div class="device-card">
+                        <div
+                            class="device-card"
+                            data-name="DESIGN-LAPTOP"
+                            data-ip="192.168.1.10"
+                            data-status="Offline"
+                        >
                             <div class="device-name">
                                 DESIGN-LAPTOP
                             </div>
-                            <div class="device-status">
+                            <div class="device-status offline-status">
                                 Offline
                             </div>
                             <div class="device-ip">
@@ -128,11 +143,16 @@
                             </div>
                         </div>
 
-                        <div class="device-card">
+                        <div
+                            class="device-card"
+                            data-name="SERVER-01"
+                            data-ip="192.168.1.20"
+                            data-status="Online"
+                        >
                             <div class="device-name">
                                 SERVER-01
                             </div>
-                            <div class="device-status">
+                            <div class="device-status online-status">
                                 Online
                             </div>
                             <div class="device-ip">
@@ -140,11 +160,16 @@
                             </div>
                         </div>
 
-                        <div class="device-card">
+                        <div
+                            class="device-card"
+                            data-name="ANDRO案-PHONE"
+                            data-ip="192.168.1.30"
+                            data-status="Online"
+                        >
                             <div class="device-name">
                                 ANDROID-PHONE
                             </div>
-                            <div class="device-status">
+                            <div class="device-status online-status">
                                 Online
                             </div>
                             <div class="device-ip">
@@ -152,17 +177,66 @@
                             </div>
                         </div>
 
+                        <div
+                            class="device-card"
+                            data-name="LIVINGROOM-TV"
+                            data-ip="192.168.1.40"
+                            data-status="Offline"
+                        >
+                            <div class="device-name">
+                                LIVINGROOM-TV
+                            </div>
+                            <div class="device-status offline-status">
+                                Offline
+                            </div>
+                            <div class="device-ip">
+                                192.168.1.40
+                            </div>
+                        </div>
 
-
-
-
-
-
-
-
+                        <div
+                            class="device-card"
+                            data-name="GAMING-PC"
+                            data-ip="192.168.1.50"
+                            data-status="Online"
+                        >
+                            <div class="device-name">
+                                GAMING-PC
+                            </div>
+                            <div class="device-status online-status">
+                                Online
+                            </div>
+                            <div class="device-ip">
+                                192.168.1.50
+                            </div>
+                        </div>
 
                     </div>
+
+
+
+                    
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <div class="add-device-btn">
                     Add Device
@@ -229,22 +303,31 @@
                     <div class="overview-content">
 
 
-                        <div class="overview-item">
-                            Device Name:
-                            <span id="overview-device-name"></span>
+                        <div
+                            class="overview-item"
+                            id="overview-name"
+                        >
+                            Device Name:                            
                         </div>
 
-                        <div class="overview-item">
+                        <div
+                            class="overview-item"
+                            id="overview-ip"
+                        >
                             IP Address:
-                            <span id="overview-device-ip"></span>
                         </div>
 
-                        <div class="overview-item">
+                        <div
+                            class="overview-item"
+                            id="overview-status"
+                        >
                             Status:
-                            <span id="overview-device-status"></span>
                         </div>
 
-                        <div class="overview-item">
+                        <div
+                            class="overview-item"
+                            id="overview-uptime"
+                        >
                             Uptime:
                             <span id="overview-device-uptime"></span>
                         </div>
@@ -309,11 +392,16 @@
 
                             <div class="device-details">
 
-                                <div class="device-name">
+                                <div
+                                    class="device-name"
+                                    id="selected-device-name"
+                                >
                                     OFFICE-PC-01
                                 </div>
 
-                                <div class="device-meta">
+                                <div
+                                    id="selected-device-info"
+                                >
                                     192.168.1.5 • Windows 11 Pro • Online
                                 </div>
 
@@ -439,11 +527,41 @@
 
                 <div id="screencast-page" class="workspace-page">
 
-                    <div class="screencast-container">
+                    <div class="screencast-toolbar">
 
-                        Screencast Area
+                        <button class="screen-btn">
+                            Start Live
+                        </button>
+
+                        <button class="screen-btn">
+                            Stop Live
+                        </button>
+
+                        <button class="screen-btn">
+                            Record
+                        </button>
+
+                        <button class="screen-btn">
+                            Refresh
+                        </button>
+
+                        <button class="screen-btn">
+                            Screenshot
+                        </button>
+
+                        <button class="screen-btn">
+                            Fullscreen
+                        </button>
 
                     </div>
+
+
+                    <div class="screen-view">
+
+                        Remote Screen Area
+
+                    </div>
+
 
                 </div>
 
@@ -479,11 +597,10 @@
 
                     <div class="shell-input-bar">
 
-                        <input
-                            type="text"
+                        <textarea                            
                             class="shell-input"
                             placeholder="Enter command..."
-                        >
+                        ></textarea>
 
                         <button class="shell-run-btn">
                             Run
@@ -497,9 +614,33 @@
 
                 <div id="audio-page" class="workspace-page">
 
-                    <div class="audio-container">
+                    <div class="audio-toolbar">
 
-                        Audio Workspace
+                        <button class="audio-btn">
+                            Start
+                        </button>
+
+                        <button class="audio-btn">
+                            Stop
+                        </button>
+
+                        <button class="audio-btn">
+                            Record
+                        </button>
+
+                        <button class="audio-btn toggle-btn">
+                            Mute
+                        </button>
+
+                        <button class="audio-btn">
+                            Refresh
+                        </button>
+
+                    </div>
+
+                    <div class="audio-output">
+
+                        Audio Stream Area
 
                     </div>
 
@@ -509,9 +650,43 @@
 
                 <div id="config-page" class="workspace-page">
 
-                    <div class="config-container">
+                    <div class="config-toolbar">
 
-                        Config Workspace
+                        <button class="config-btn">
+                            Save
+                        </button>
+
+                        <button class="config-btn">
+                            Reset
+                        </button>
+
+                        <button class="config-btn">
+                            Refresh
+                        </button>
+
+                    </div>
+
+                    <div class="config-content">
+
+                        <div class="config-card">
+                            General Settings
+                        </div>
+
+                        <div class="config-card">
+                            Network Settings
+                        </div>
+
+                        <div class="config-card">
+                            Security Settings
+                        </div>
+
+                        <div class="config-card">
+                            Display Settings
+                        </div>
+
+                        <div class="config-card">
+                            Audio Settings
+                        </div>
 
                     </div>
 

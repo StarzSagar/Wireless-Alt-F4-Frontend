@@ -129,6 +129,113 @@ function clearActiveTabs(){
 }
 
 
+// code for shell input and output
+
+const shellInput = document.querySelector(".shell-input");
+
+shellInput.addEventListener("keydown", function(event){
+
+    if(event.key === "Enter" && !event.shiftKey){
+
+        event.preventDefault();
+
+        console.log("Run Command");
+
+    }
+
+});
+
+// mute button code -- highlight for every button class - toggle-btn
+
+const toggleButtons =
+document.querySelectorAll(".toggle-btn");
+
+toggleButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        button.classList.toggle("active-control");
+
+    });
+
+});
+
+
+
+// device card selection code change tabs
+
+const deviceCards =
+document.querySelectorAll(".device-card");
+
+deviceCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        deviceCards.forEach(c => {
+
+            c.classList.remove(
+                "selected",
+                "selected-online",
+                "selected-offline"
+            );
+
+        });
+
+        const status =
+        card.dataset.status;
+
+        card.classList.add("selected");
+
+        if(status === "Online"){
+
+            card.classList.add(
+                "selected-online"
+            );
+
+        }else{
+
+            card.classList.add(
+                "selected-offline"
+            );
+
+        }
+
+        document.getElementById(
+            "overview-name"
+        ).textContent =
+        "Device Name: " +
+        card.dataset.name;
+
+        document.getElementById(
+            "overview-ip"
+        ).textContent =
+        "IP Address: " +
+        card.dataset.ip;
+
+        document.getElementById(
+            "overview-status"
+        ).textContent =
+        "Status: " +
+        card.dataset.status;
+
+        document.getElementById(
+            "selected-device-name"
+        ).textContent =
+        card.dataset.name;
+
+        document.getElementById(
+            "selected-device-info"
+        ).textContent =
+        card.dataset.ip +
+        " • " +
+        card.dataset.status;
+
+    });
+
+});
+
+
+
 
 
 
